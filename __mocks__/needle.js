@@ -50,7 +50,7 @@ needle.request = jest.fn((method, url, data, opts, callback) => {
   const {pathname} = urlObj
   const resourceName = pathname.split('/').filter(a => a)[0]
   if (resourceName === 'customers') return callback(null, {body: customerResponse})
-  return callback(errorResponse)
+  return callback(null, {body: errorResponse})
 })
 
 module.exports = needle
