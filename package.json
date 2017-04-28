@@ -1,5 +1,5 @@
 {
-  "name": "node-gocardless",
+  "name": "gocardless-api",
   "version": "0.1.0",
   "description": "Wrapper for GoCardless API v2",
   "main": "./lib/gocardless.js",
@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/centre-for-effective-altruism/node-gocardless/issues"
   },
-  "homepage": "https://github.com/centre-for-effective-altruism/node-gocardless#readme"
+  "homepage": "https://github.com/centre-for-effective-altruism/node-gocardless#readme",
+  "devDependencies": {
+    "dotenv": "^4.0.0",
+    "jest": "^19.0.2"
+  },
+  "dependencies": {
+    "needle": "^1.6.0"
+  }
 }
