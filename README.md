@@ -40,6 +40,12 @@ gocardless.request({
 
 ```
 
+The request will automatically add the following headers:
+- `Authorization: Bearer <YOUR_ACCESS_TOKEN>`
+- `GoCardless-Version: 2015-07-06`
+
+You can override these headers using `options.headers` (see below)
+
 **request `options` Object:**
 
 `method` _(String)_: HTTP request method. One of `GET`, `PUT`, `PATCH` or `DELETE`
