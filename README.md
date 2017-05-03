@@ -50,8 +50,8 @@ You can override these headers using `options.headers` (see below)
 
 **request `options` Object:**
 
-- `method` _(String)_: HTTP request method. One of `GET`, `PUT`, `PATCH` or `- DELETE`
-- `resource` _(String)_: Path to the requested resource (e.g. `customers`, `- mandates/123`)
+- `method` _(String)_: HTTP request method. One of `GET`, `PUT`, `PATCH` or `DELETE`
+- `resource` _(String)_: Path to the requested resource (e.g. `customers`, `mandates/123`)
 - `data` _(Object)_: Data to accompany `PUT` or `PATCH` requests
 - `query` _(Object)_: Query string as `key=>value` pairs (e.g. `{ limit: 10 }`)
 - `options` _(Object)_: Additional request options. Passed directly to `[needle](https://www.npmjs.com/package/needle)`.
