@@ -1,5 +1,5 @@
 
-Lightweight API wrapper for maing requests to GoCardless.
+Lightweight API wrapper for making requests to [GoCardless](https://gocardless.com/).
 
 See the [GoCardless docs](https://developer.gocardless.com/) for a list of valid resources.
 
@@ -28,6 +28,7 @@ const gocardless = new GoCardless(YOUR_ACCESS_TOKEN)
 Makes an API request, then returns the resulting resource.
 
 ```js
+const GoCardless = require('gocardless-api')
 const gocardless = new GoCardless(YOUR_ACCESS_TOKEN)
 gocardless.request({
     method: 'GET',
@@ -54,4 +55,4 @@ You can override these headers using `options.headers` (see below)
 - `resource` _(String)_: Path to the requested resource (e.g. `customers`, `mandates/123`)
 - `data` _(Object)_: Data to accompany `PUT` or `PATCH` requests
 - `query` _(Object)_: Query string as `key=>value` pairs (e.g. `{ limit: 10 }`)
-- `options` _(Object)_: Additional request options. Passed directly to `[needle](https://www.npmjs.com/package/needle)`.
+- `options` _(Object)_: Additional request options. Passed directly to [`needle`](https://www.npmjs.com/package/needle).
